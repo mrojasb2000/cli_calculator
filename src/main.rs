@@ -65,7 +65,7 @@ fn get_number(prompt: &str) -> f64 {
         // Try to convert the input string into a floating-point number (f64)
         match input.trim().parse::<f64>() {
             Ok(num) => return num, // If parsing succeds, return the number
-            Err(_) => println!("Invalid number. Please enter a valid number."),
+            Err(_) => println!("Invalid input. Please enter a valid number."),
         }
     }
 }
